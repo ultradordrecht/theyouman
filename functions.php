@@ -35,3 +35,6 @@ function tailpress(): TailPress\Framework\Theme
 }
 
 tailpress();
+if ( file_exists( __DIR__ . '/inc/events.php' ) ) {
+    require_once __DIR__ . '/inc/events.php';
+}

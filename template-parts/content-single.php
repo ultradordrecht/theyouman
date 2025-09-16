@@ -2,10 +2,11 @@
     <header class="mx-auto flex max-w-5xl flex-col text-center">
         <h1 class="mt-6 text-5xl font-medium tracking-tight [text-wrap:balance] text-zinc-950 sm:text-6xl"><?php the_title(); ?></h1>
 
-        <?php if(! is_page()): ?>
-            <time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="order-first text-sm text-zinc-950"><?php echo get_the_date(); ?></time>
-
-            <p class="mt-6 text-sm font-semibold text-zinc-950">by <?php the_author(); ?></p>
+        <?php
+            if(! is_page()): ?>
+            <p class="mt-6 text-sm font-semibold text-zinc-950"><?php the_author(); ?>
+                <time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="order-first text-sm text-zinc-600" title="<?php echo get_the_date(); ?>"><?php echo  youman_time_ago_short( get_the_time('U')); ?></time>
+            </p>
         <?php endif; ?>
     </header>
 
