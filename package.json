@@ -1,5 +1,5 @@
 {
-	"name": "theyouman.com",
+	"name": "theyouman",
 	"version": "0.1.0",
 	"description": "Boilerplate WordPress theme with Tailwind CSS.",
 	"author": "Gerhard Messelink",
@@ -9,7 +9,7 @@
 	},
 	"theme_uri": "https://github.com/tailpress/tailpress",
 	"author_uri": "https://tailpress.io",
-	"text_domain": "theyouman.com",
+	"text_domain": "theyouman",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite",
